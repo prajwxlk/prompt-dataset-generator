@@ -41,7 +41,7 @@ const Home = () => {
       </button>
       {data.length > 0 && (
         <div style={{ marginTop: '20px' }}>
-          <h3>Stored values:</h3>
+          <h3>Stored values: ({data.length})</h3>
           <ul>
             {data.map((d, i) => (
               <li key={i}>{d}</li>

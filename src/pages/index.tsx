@@ -2,10 +2,10 @@ import React, { useState } from 'react';
 
 const Home = () => {
   const [text, setText] = useState('');
-  const [data, setData] = useState([]);
+  const [data, setData] = useState(['']);
   const [successMessage, setSuccessMessage] = useState('');
 
-  const handleSubmit = (e) => {
+  const handleSubmit = (e:any) => {
     e.preventDefault();
     setData([...data, text]);
     setText('');

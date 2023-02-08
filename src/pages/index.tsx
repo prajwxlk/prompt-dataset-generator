@@ -39,6 +39,16 @@ const Home = () => {
       <button onClick={handleDownload} style={{ marginTop: '20px' }}>
         Generate Dataset
       </button>
+      {data.length > 0 && (
+        <div style={{ marginTop: '20px' }}>
+          <h3>Stored values:</h3>
+          <ul>
+            {data.map((d, i) => (
+              <li key={i}>{d}</li>
+            ))}
+          </ul>
+        </div>
+      )}
     </div>
   );
 };
